@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galerias</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+ <!--CSS PARA FOTOS en html y en css /* */-->  
+   <style>
+        body {
+  margin: 0px;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+div#background {
+  height: 700px;
+  width: 100%;
+  background-color: black;
+  padding-top: 20px;
+}
+
+div#gallery {
+  width: 800px;
+  margin: auto;
+}
+
+
+#background img {
+  height: 150px;
+  margin: 0px;
+}
+
+#background figure {
+  float: left;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 2px 3px black;
+}
+
+figure.pic1 {
+  -webkit-transform : rotate(-10deg);
+  z-index: 1;
+}
+
+figure.pic2 {
+  -webkit-transform : rotate(15deg);
+  z-index: 2;
+}
+
+figure.pic3 {
+  -webkit-transform : rotate(-25deg);
+  z-index: 1;
+}
+
+figure.pic4 {
+  -webkit-transform : rotate(5deg);
+  z-index:1;
+}
+
+figure.pic5 {
+  -webkit-transform : rotate(5deg);
+  z-index:1;
+}
+
+
+#background figure:hover {
+  box-shadow: 5px 10px 100px yellow;
+  -webkit-transform: scale(1.1,1.1);
+  z-index: 20;
+}   
+ </style>
+ 
+</head>
+<body>
+    <div id="container">
+        <section class="galeria1">
+        <figure>
+                <a href="images/wicked.jpg" data-lightbox="portafolio1" data-title="Portafolio musicales">
+                <img src="images/wickedp.jpg" alt="Portafolio musicales"> 
+
+                <a href="images/waitress.jpg" data-lightbox="portafolio1" data-title="Portafolio musicales">
+                    <img src="images/waitressp.jpg" alt="Portafolio musicales"> 
+
+                <a href="images/phantom.jpg" data-lightbox="portafolio1" data-title="Portafolio musicales">
+                        <img src="images/phantomp.jpg" alt="Portafolio musicales"> 
+            </a>
+        </figure>
+        </section>
+    <section class="galeria2"></section>
+    <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+
+<div id="background">
+  <div id="gallery">
+    <figure class="pic1">
+            <li><a href="https://www.miss-saigon.com/us-tour"></li>
+      <img src="images/miss.JPG" />
+      <figcaption>Miss Saigon</figcaption>
+    </figure>
+    <figure class="pic2">
+      <img src="images/buho.bpg" width="200"/>
+      <figcaption>José El Soñador</figcaption>
+    </figure>
+    <figure class="pic3">
+      <img src="images/roxy.JPG" />
+      <figcaption>Chicago</figcaption>
+    </figure>
+    <figure class="pic4">
+      <img src="images/ursula.JPG" />
+      <figcaption>La Sirenita.</figcaption>
+    </figure>
+    <figure class="pic5">
+            <li><a href="https://www.youtube.com/watch?v=Uk-l65raHOU"></li>
+      <img src="images/fosse.JPG" />
+      <figcaption>Fosse Tribute</figcaption>
+    </figure>
+  </div>
+</div>
+    </section>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/bpgdec-0.9.4.js"></script>
+    </body>
+</html>
