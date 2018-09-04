@@ -1,0 +1,61 @@
+
+body, html {
+    margin: 0;
+    height: 100%;
+    background-color: beige
+}
+    html {
+    box-sizing: border-box;
+}  
+*, *:before, *after {
+    box-sizing: inherit ;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-family: 'Slabo 27px', serif;
+}
+
+.titulo {
+    color: darkgreen;
+}
+
+.parrafo1 {
+    color: chocolate;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 300px);
+    grid-gap: 5px;
+    grid-template-areas: 
+    ". bob bob bob bob bob bob ."
+    ". . s1 s1 s1 s1 . ."
+    ". . s1 s1 s1 s1 . ."
+    ". s2 s2 s2 s2 s2 s2 ."
+    "pie pie pie pie pie pie pie pie"
+   
+}
+
+header {
+    background-color: cyan;
+    grid-area: bob;
+}
+#gallery {
+    background-color: darkkhaki;
+    grid-area: s1;
+}
+
+#gallery {
+    background-color: mediumvioletred;
+    grid-area: s2;
+}
+
+footer{
+    background-color: yellow;
+    grid-area: pie;
+}
