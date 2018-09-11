@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css shapes</title>
+ 
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minimax(450px, 1fr));
+            grid-gap: 1rem;
+        }
+        #imgagen1 {
+            float: left;
+            shape-outside: circle(138px at 28.60% 42.745);
+        }
+        #imagen2 {
+            float: left;
+            shape-outside: url(images/puntos.png);
+        }
+
+         #imagen3 {
+            float: left;
+            shape-outside: polygon(0% 100%, 90% 100%, 92.24% 65.17%, 80.04% 26.97%, 68.43% 26%, 63.67% 37.71%, 64.94% 51.63%, 55.37% 70.99%, 46.52% 81.38%, 42.24% 62.03%, 53.02% 53.06%, 51.06% 35.4%, 47.6% 23.71%, 32.71% 25.06%, 23.41% 48.71%, 0.57% 69.83%);
+        }
+
+         #imagen4 {
+            clip-path:  polygon(0% 100%, 90% 100%, 92.24% 65.17%, 80.04% 26.97%, 68.43% 26%, 63.67% 37.71%, 64.94% 51.63%, 55.37% 70.99%, 46.52% 81.38%, 42.24% 62.03%, 53.02% 53.06%, 51.06% 35.4%, 47.6% 23.71%, 32.71% 25.06%, 23.41% 48.71%, 0.57% 69.83%);
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>shapes1 </h1>
+            <img src="images/roxy1.JPG" alt="chicago" width="500" id="imagen1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus omnis est obcaecati dolore porro in accusantium, quae temporibus numquam a, aliquam voluptatum provident, quaerat nulla sunt sequi vel magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quia sed ipsum quos explicabo? Qui, labore consectetur ab blanditiis eius similique, sit atque perferendis debitis expedita dicta? Laboriosam, sunt quidem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus omnis est obcaecati dolore porro in accusantium, quae temporibus numquam a, aliquam voluptatum provident, quaerat nulla sunt sequi vel magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quia sed ipsum quos explicabo? Qui, labore consectetur ab blanditiis eius similique, sit atque perferendis debitis expedita dicta? Laboriosam, sunt quidem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus omnis est obcaecati dolore porro in accusantium, quae temporibus numquam a, aliquam voluptatum provident, quaerat nulla sunt sequi vel magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quia sed ipsum quos explicabo? Qui, labore consectetur ab blanditiis eius similique, sit atque perferendis debitis expedita dicta? Laboriosam, sunt quidem.</p>
+    </section>
+
+    <section>
+        <h1>shapes2</h1>
+        <img src="images/puntos.png" alt="puntos" width="500" id="imagen2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci debitis minus est facere repellendus, distinctio similique minima? Aut est cumque voluptatem, quasi esse possimus nesciunt aliquid praesentium! Eius, non odio?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci debitis minus est facere repellendus, distinctio similique minima? Aut est cumque voluptatem, quasi esse possimus nesciunt aliquid praesentium! Eius, non odio?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci debitis minus est facere repellendus, distinctio similique minima? Aut est cumque voluptatem, quasi esse possimus nesciunt aliquid praesentium! Eius, non odio?
+                </p>
+
+    </section>
+
+    <section>
+            <h1>shapes3 Polygon</h1>
+            <img src="images/miss.JPG" alt="flamingo" width="500" id="imagen3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci debitis minus est facere repellendus, distinctio similique minima? Aut est cumque voluptatem, quasi esse possimus nesciunt aliquid praesentium! Eius, non odio?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci debitis minus est facere repellendus, distinctio similique minima? Aut est cumque voluptatem, quasi esse possimus nesciunt aliquid praesentium! Eius, non odio?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci debitis minus est facere repellendus, distinctio similique minima? Aut est cumque voluptatem, quasi esse possimus nesciunt aliquid praesentium! Eius, non odio?
+                    </p>
+    
+        </section>
+        
+        <section>
+                <h1>shapes3 Clip</h1>
+                <img src="images/miss.JPG" alt="flamingo" width="500" id="imagen4">
+                
+
+        </section>
+    </div>
+    
+</body>
+</html>
