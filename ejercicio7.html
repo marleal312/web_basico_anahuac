@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ens>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 7</title>
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+        *, *: before, *:after {
+        box-sizing: inherit;
+        }
+        body {
+            color:rgb(2, 0, 0);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        p{
+            padding: 1em;
+        }
+        #container {
+            width: 600px;
+            height: 600px;
+            background-color:rgb(245, 219, 188);
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            align-items: flex-end;
+
+        }
+        .caja{
+            width: auto;
+            height: 100px;
+        }
+        .box1{
+            background-color: aquamarine;
+            height: 120;
+        }
+        .box2{
+            background-color: rgb(255, 253, 127);
+            height: 100;
+        }
+        .box3{
+            background-color: rgb(251, 127, 255);
+            height: 50;
+        }
+        .box4{
+            background-color: rgb(127, 146, 255);
+            height: 80;
+        }
+        .box5{
+            background-color: rgb(240, 42, 42);
+            height: 30;
+        }
+
+
+
+         #container2 {
+            width:100wv;
+            height: 600px;
+            background-color:rgb(207, 185, 158);
+
+            display: flex;
+            flex-wrap: wrap;
+            /*align-content: center;*/
+              }
+
+        .caja-a {
+            flex-grow: 1;
+        }
+
+        .box6{
+            background-color: rgb(255, 253, 127);
+        }
+        .box7{
+            background-color: rgb(251, 127, 255);
+        }
+        .box7{
+            background-color: rgb(127, 146, 255);
+        }
+        .box8{
+            background-color: rgb(240, 42, 42);
+        }
+        .box9{
+            background-color: rgb(94, 209, 142);
+        } 
+        .box10{
+            background-color: rgb(55, 42, 240);
+            
+        }
+
+             }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <section class="box1 caja"><p>caja 1</p></section>
+        <section class="box2 caja"><p>caja 2</p></section>
+        <section class="box3 caja"><p>caja 3</p></section>
+        <section class="box4 caja"><p>caja 4</p></section>
+        <section class="box5 caja"><p>caja 5</p></section>
+    </div>
+
+    <div id="container2">
+            <section class="box6 caja-a"><p>caja 6</p></section>
+            <section class="box7 caja-a"><p>caja 7 con</p></section>
+            <section class="box8 caja-a"><p>caja 8 con más</p></section>
+            <section class="box9 caja-a"><p>caja 9 con más texto</p></section>
+            <section class="box10 caja-a"><p>caja 10 con mucho más texto</p></section>
+        </div>
+</body>
+</html>
