@@ -1,33 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
+        <body style="background-color:powderblue;">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Diseño Web Básico</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Este es el índice de mis ejercicios de Diseño Web Básico">
-    <meta name="autor" content="Mar Leal">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link id="page_favicon" href="favicon/favicon.ico" rel="icon" type="image/x-icon">
+    <title>Mar Leal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--CSS PARA FOTOS en html y en css /* */-->  
+   <style>
+        body {
+  margin: 0px;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+div#background {
+  height: 700px;
+  width: 100%;
+  background-color: black;
+  padding-top: 20px;
+}
+
+div#gallery {
+  width: 800px;
+  margin: auto;
+}
+
+
+#background img {
+  height: 150px;
+  margin: 0px;
+}
+
+#background figure {
+  float: left;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 2px 3px black;
+}
+
+figure.pic1 {
+  -webkit-transform : rotate(-10deg);
+  z-index: 1;
+}
+
+figure.pic2 {
+  -webkit-transform : rotate(15deg);
+  z-index: 2;
+}
+
+figure.pic3 {
+  -webkit-transform : rotate(-25deg);
+  z-index: 1;
+}
+
+figure.pic4 {
+  -webkit-transform : rotate(5deg);
+  z-index:1;
+}
+
+figure.pic5 {
+  -webkit-transform : rotate(5deg);
+  z-index:1;
+}
+
+
+#background figure:hover {
+  box-shadow: 5px 10px 100px yellow;
+  -webkit-transform: scale(1.1,1.1);
+  z-index: 20;
+}   
+ </style>
+ 
 </head>
 <body>
     <div id="container">
-        <header>
-            <ul>
-                <li><a href="index.html">Home.</a></li>
-                <li><a href="ejercicio1.html">Imagenes.</a></li>
-                <li><a href="ejercicio2.html">Videos y audio.html</a></li>
-                <li><a href="ejercicio3.html">Pbg</a></li>
-                <li><a href="ejercicio4.html">Galeria</a></li>
-                <li><a href="ejercicio5.html">Vivus</a></li>
-                <li><a href="ejercicio6.html">Css shapes/ Vivus</a></li>
-                <li><a href="ejercicio7.html"></a></li>
-                <li><a href="ejercicio8.html">Proximamente</a></li>
+        
+    <section class="galeria2"></section>
+    <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
 
-                
-            </ul>
-        </header>
-        <footer></footer>
+<div id="background">
+  <div id="gallery">
+    <figure class="Diseño">
+            <li><a href="ejercicio1.html"></li>
+      <img src="images/miss.JPG" />
+      <figcaption>Diseño</figcaption>
+    </figure>
+    <figure class="Teatro y Música">
+            <li><a href="ejercicio2.html"></li>
+      <img src="images/miss.JPG" />
+      <figcaption>Teatro y Música</figcaption>
+    </figure>
+  </div>
+</div>
+    </section>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/bpgdec-0.9.4.js"></script>
+
+
+    <style>
+         html, body{margin: 0;}
+        
+    </style> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Este es el índice de mis ejercicios de Diseño Web Básico">
+    <meta name="autor" content="Mar Leal">
+    <link rel="style.css" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+        <div class="container">
+                <img src="images/diseno.png" alt="Diseño" width="100px">
+                <button class="btn">Diseño</button>
+              </div> 
+    
+        <section>
+             
+                <img src="images/teatroymusica.png" alt="teatroymusica" width="200px">
+                <button class="btn">Diseño</button>
+            </section>
+    
+        <footer>
+                <p> <a href="javascript:location='mailto:\u0063\u006f\u006e\u0074\u0061\u0063\u0074\u006f\u0040\u006d\u0061\u0072\u006c\u0065\u0061\u006c\u002e\u0063\u006f\u006d';void 0"><script type="text/javascript">document.write('\u0063\u006f\u006e\u0074\u0061\u0063\u0074\u006f\u0040\u006d\u0061\u0072\u006c\u0065\u0061\u006c\u002e\u0063\u006f\u006d')</script></a>
+
+                    <li><a href="https://www.facebook.com/mar.leal.733" target="_blank">facebook</li>
+                      <li><a href="https://www.instagram.com/marleal312/?hl=es-la" target="_blank">instagram</a></li>
+        </footer>
     </div>
 </body>
 </html>
